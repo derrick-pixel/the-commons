@@ -364,6 +364,15 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
+// --- FAQ Accordion ---
+function toggleFAQ(item) {
+  const wasOpen = item.classList.contains('open');
+  // Close all FAQs
+  document.querySelectorAll('.faq-item').forEach(f => f.classList.remove('open'));
+  // Open the clicked one if it wasn't already open
+  if (!wasOpen) item.classList.add('open');
+}
+
 // --- Init ---
 document.addEventListener('DOMContentLoaded', () => {
   initFadeIn();

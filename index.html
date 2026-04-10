@@ -69,8 +69,9 @@
       <div class="float-element">&#127926;</div>
     </div>
     <div class="container hero-content">
-      <div class="badge badge-white" style="margin-bottom: 20px;">
-        &#128293; The future of group events
+      <div style="display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap;">
+        <div class="badge badge-white">&#128293; The future of group events</div>
+        <div class="badge badge-white">&#127970; Backed by Elitez Group</div>
       </div>
       <h1>Gather Your People.<br>Fund It Together.<br>Make It Happen.</h1>
       <p>No more chasing payments. No more flaky RSVPs. The Commons brings your crew together with built-in escrow payments, so everyone's committed before the party starts.</p>
@@ -429,8 +430,139 @@
     </div>
   </section>
 
-  <!-- Event Categories -->
+  <!-- Trust & FAQ Section -->
   <section class="section" style="background: var(--sand);">
+    <div class="container">
+      <div class="section-header">
+        <div class="overline">Trust & Safety</div>
+        <h2>Got Questions? <span class="text-gradient">We've Got Answers.</span></h2>
+        <p>Everything you need to know about giving money through The Commons.</p>
+      </div>
+
+      <!-- Elitez Trust Badge -->
+      <div style="max-width: 880px; margin: 0 auto 48px; background: white; border-radius: var(--radius-xl); padding: 32px; box-shadow: var(--shadow-md); border: 2px solid rgba(16,185,129,0.2);">
+        <div style="display: flex; align-items: center; gap: 24px; flex-wrap: wrap;">
+          <div style="width: 80px; height: 80px; border-radius: 16px; background: linear-gradient(135deg, #10B981, #059669); display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 8px 24px rgba(16,185,129,0.3);">
+            <span style="font-size: 2.2rem;">&#127970;</span>
+          </div>
+          <div style="flex: 1; min-width: 240px;">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+              <span style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #059669;">Backed by</span>
+              <span class="badge badge-green">Financially Secured</span>
+            </div>
+            <h3 style="margin-bottom: 6px; font-size: 1.4rem;">Elitez Group</h3>
+            <p style="font-size: 0.9rem; margin: 0;">The Commons is backed by Elitez Group, a financially sound organisation with proven track record in operations across Singapore and Southeast Asia. Your money is protected by an established business with the resources to honour every escrow commitment.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Accordion -->
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div class="faq-item" onclick="toggleFAQ(this)">
+          <div class="faq-question">
+            <span>&#128272; Is my money actually safe?</span>
+            <span class="faq-arrow">&#9662;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Absolutely. Every payment you make on The Commons goes into a secure escrow account — not directly to the organiser. The funds are held by our backing partner, Elitez Group, until the event day. If the event is cancelled for any reason, you get an automatic full refund. No questions, no awkward conversations.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFAQ(this)">
+          <div class="faq-question">
+            <span>&#127970; Who is Elitez Group?</span>
+            <span class="faq-arrow">&#9662;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Elitez Group is the financially sound parent organisation backing The Commons. With established operations across Singapore and Southeast Asia, Elitez provides the financial guarantees and operational infrastructure that make our escrow system trustworthy. This isn't a fly-by-night startup holding your money — it's an established company with a real track record.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFAQ(this)">
+          <div class="faq-question">
+            <span>&#128176; What if a friend doesn't pay their share?</span>
+            <span class="faq-arrow">&#9662;</span>
+          </div>
+          <div class="faq-answer">
+            <p>The Commons sends automatic payment reminders 48 hours before each milestone deadline. If someone misses a deadline, we escalate with follow-up notices. After repeated misses, the organiser can release that person's spot to a waitlist member or remove them from the event entirely. You never have to be the awkward one chasing money.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFAQ(this)">
+          <div class="faq-question">
+            <span>&#9203; What if the event gets cancelled?</span>
+            <span class="faq-arrow">&#9662;</span>
+          </div>
+          <div class="faq-answer">
+            <p>If an organiser cancels an event, all escrowed funds are <strong>automatically refunded to attendees in full</strong> — no manual refund requests, no waiting weeks for chargebacks. The money goes back to the original payment method within 3-5 business days.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFAQ(this)">
+          <div class="faq-question">
+            <span>&#9878;&#65039; Are the service providers verified?</span>
+            <span class="faq-arrow">&#9662;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Every service provider on the marketplace goes through a verification process before they can list services: identity check, business registration verification, portfolio review, and reference checks. Once verified, they earn a green verified badge. Reviews and ratings from actual customers keep the marketplace honest.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFAQ(this)">
+          <div class="faq-question">
+            <span>&#128178; What does it cost?</span>
+            <span class="faq-arrow">&#9662;</span>
+          </div>
+          <div class="faq-answer">
+            <p>The Commons is <strong>free to use</strong> for organisers and attendees. We charge a 5% commission on the funds released from escrow on event day — that's it. No subscription fees, no per-event charges, no hidden costs. Service providers pay a 10% booking commission, which is built into their listed prices.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFAQ(this)">
+          <div class="faq-question">
+            <span>&#129489;&#8205;&#9876;&#65039; What if there's a dispute?</span>
+            <span class="faq-arrow">&#9662;</span>
+          </div>
+          <div class="faq-answer">
+            <p>If something goes wrong — service quality issues, organiser disputes, refund disagreements — our team mediates. Open a dispute case in your dashboard and we'll review within 48 hours. Common cases: partial refunds (47%), full refunds (28%), warning to organiser (15%), no action (10%). Our average resolution time is 2.3 days.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFAQ(this)">
+          <div class="faq-question">
+            <span>&#127981; Is The Commons regulated?</span>
+            <span class="faq-arrow">&#9662;</span>
+          </div>
+          <div class="faq-answer">
+            <p>The Commons operates in compliance with Singapore's Payment Services Act 2019 (PSA) through partnerships with licensed payment processors. We follow strict PDPA data protection standards, AML/CFT requirements, and consumer protection regulations. All payment processing is handled by MAS-licensed financial institutions.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFAQ(this)">
+          <div class="faq-question">
+            <span>&#128241; Do I need to download an app?</span>
+            <span class="faq-arrow">&#9662;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Nope. The Commons works in any web browser — desktop, tablet, or mobile. No app downloads, no installs. Just share an event link and your friends can RSVP and pay in seconds. We're working on native iOS and Android apps for future release, but the web version has all the features you need.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFAQ(this)">
+          <div class="faq-question">
+            <span>&#127757; Which countries do you support?</span>
+            <span class="faq-arrow">&#9662;</span>
+          </div>
+          <div class="faq-answer">
+            <p>We launched in Singapore with full PayNow, GrabPay, and credit card support. We also support events in Malaysia, Thailand, Indonesia, Philippines, and Vietnam, with currency conversion handled automatically. International expansion to other ASEAN markets is coming throughout 2026.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Event Categories -->
+  <section class="section" style="background: white;">
     <div class="container">
       <div class="section-header">
         <div class="overline">For Every Occasion</div>
