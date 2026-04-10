@@ -127,9 +127,8 @@
           <div class="form-group">
             <label>Category</label>
             <select id="eventCategory">
-              <option value="">Select category</option>
               <option value="yacht">&#128674; Yacht</option>
-              <option value="party">&#127881; Party</option>
+              <option value="party" selected>&#127881; Party</option>
               <option value="hike">&#127956; Outdoor Adventure</option>
               <option value="travel">&#9992;&#65039; Group Travel</option>
               <option value="festival">&#127917; Festival</option>
@@ -140,7 +139,7 @@
           </div>
           <div class="form-group">
             <label>Max Attendees</label>
-            <input type="number" placeholder="e.g. 25" id="maxAttendees">
+            <input type="number" placeholder="e.g. 25" id="maxAttendees" value="20">
           </div>
         </div>
 
@@ -151,7 +150,8 @@
           </div>
           <div class="form-group">
             <label>Event Time</label>
-            <input type="time" id="eventTime">
+            <input type="time" id="eventTime" value="20:00" step="900">
+            <div class="form-hint">Time selectable in 15-min blocks</div>
           </div>
         </div>
 
@@ -584,6 +584,13 @@
     document.addEventListener('DOMContentLoaded', function() {
       const eventDateInput = document.getElementById('eventDate');
       if (eventDateInput) {
+        // Default to today's date
+        const today = new Date();
+        const yyyy = today.getFullYear();
+        const mm = String(today.getMonth() + 1).padStart(2, '0');
+        const dd = String(today.getDate()).padStart(2, '0');
+        eventDateInput.value = `${yyyy}-${mm}-${dd}`;
+
         eventDateInput.addEventListener('change', function() {
           updateMilestoneDates();
         });
